@@ -33,9 +33,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!-- added to fix some errors -->
-                <configuration>
+                <!--<configuration>
                     <skip>true</skip>
-                </configuration>
+                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -45,14 +45,15 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
-            <plugin>
+
+            <!-- added to fix some bugs -->
+            <!--<plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <!--Note your version numbe might be different-->
                 <version>2.22.0</version>
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
         </plugins>
     </build>
