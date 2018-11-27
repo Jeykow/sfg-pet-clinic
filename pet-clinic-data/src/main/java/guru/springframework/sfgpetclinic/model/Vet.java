@@ -14,3 +14,5 @@ public class Vet extends Person {
         this.specialities = specialities;
     }
 }
+
+
